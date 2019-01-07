@@ -1,9 +1,9 @@
 @font-face {
   font-family: "PressStart2P";
   src: 
-    url("../assets/fonts/PressStart2P.ttf") format("truetype"), 
-    url("../assets/PressStart2P.woff") format("woff"), 
-    url("../assets/PressStart2P.woff2") format("woff2"); 
+    url("./assets/fonts/PressStart2P.ttf") format("truetype"), 
+    url("./assets/PressStart2P.woff") format("woff"), 
+    url("./assets/PressStart2P.woff2") format("woff2"); 
   font-weight: normal;
   font-style: normal;
 }

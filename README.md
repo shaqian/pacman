@@ -49,3 +49,9 @@ npm start
 ```
 npm run build
 ```
+
+## Caveat
+
+Device rotation works on iOS devices but may not work on some Android devices because of [issues](https://github.com/aframevr/aframe/issues/3550) with Chrome.
+
+In non-VR mode you can still swipe screen to move the player.

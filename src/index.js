@@ -120,6 +120,11 @@ AFRAME.registerComponent('maze', {
     sceneEl.addEventListener('enter-vr', () => {
       document.getElementById('sound').style.display = 'none';
       document.getElementById('github').style.display = 'none';
+      let button = document.getElementById("start");
+      if (button.innerHTML.indexOf('START') > -1 && button.style.display !== 'none') {
+        button.style.display = 'none';
+        this.start();
+      }
     });
     sceneEl.addEventListener('exit-vr', () => {
       document.getElementById('sound').style.display = 'block';
@@ -292,6 +297,8 @@ AFRAME.registerComponent('player', {
     siren.stop();
     waza.stop();
     ghostEaten.stop();
+    
+    this.el.sceneEl.exitVR();
 
     let gameoverEl = document.getElementById("gameover");
     gameoverEl.innerHTML = win ? 'YOU WIN' : 'GAME OVER';

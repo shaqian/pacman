@@ -1,6 +1,6 @@
 {
   "name": "pacman",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pacman WebVR",
   "main": "index.js",
   "scripts": {
